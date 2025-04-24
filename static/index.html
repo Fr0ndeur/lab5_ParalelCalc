@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фотограф Олексій Терещенко</title>
+    <link rel="stylesheet" href="../styles/build/common.css" />
+    <link rel="stylesheet" href="../styles/build/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&family=Roboto+Condensed:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo-and-button">
+        <div class="logo">
+          <img src="../images/logo.png" alt="Логотип" />
+        </div>
+        <button class="burger-menu" aria-label="Відкрити меню">
+          <span class="burger-icon"
+            ><svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.5 27V24H31.5V27H4.5ZM4.5 19.5V16.5H31.5V19.5H4.5ZM4.5 12V9H31.5V12H4.5Z"
+                fill="#0D1821"
+              />
+            </svg>
+          </span>
+          <span class="close-icon" style="display: none"
+            ><svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.6667 31.6666L8.33337 29.3333L17.6667 19.9999L8.33337 10.6666L10.6667 8.33325L20 17.6666L29.3334 8.33325L31.6667 10.6666L22.3334 19.9999L31.6667 29.3333L29.3334 31.6666L20 22.3333L10.6667 31.6666Z"
+                fill="#0D1821"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="./index.html" class="nav-item active">
+              <img
+                id="home-icon"
+                src="../images/material-symbols_home.png"
+                alt="Home Icon"
+              />Головна
+            </a>
+          </li>
+          <li><a href="./price.html" class="nav-item">Послуги</a></li>
+          <li><a href="./contact.html" class="nav-item">Контакти</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" class="social-icon"
+            ><img src="../images/prime_twitter.png" alt="Icon 1"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="../images/prime_telegram.png" alt="Icon 2"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="../images/prime_instagram.png" alt="Icon 3"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="../images/prime_linkedin.png" alt="Icon 4"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="main-banner" class="banner">
+      <div class="banner-content">
+        <h1 class="photographer-name">Олексій Терещенко</h1>
+        <p class="photographer-title">Фотограф</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-content">
+        <h2 class="about-title">Про мене</h2>
+        <p class="about-paragraph">
+          Вітаю! Мене звати Олексій, і я — фотограф із досвідом роботи в різних
+          жанрах.
+        </p>
+        <p class="about-paragraph">
+          Я спеціалізуюся на портретній та репортажній зйомці, прагнучи передати
+          не просто зображення, а емоції й характер.
+        </p>
+        <p class="about-paragraph">
+          Моя робота полягає в тому, щоб кожен кадр був наповнений змістом,
+          відображав індивідуальність та залишався актуальним довгий час.
+          Завдяки сучасним підходам і професіоналізму, я створюю фотографії, які
+          розповідають історію й викликають захоплення.
+        </p>
+        <p class="about-paragraph">
+          Якщо вам потрібні якісні, продумані кадри, які говоритимуть самі за
+          себе — звертайтеся, і я допоможу вам зафіксувати моменти, які варто
+          зберегти на довгі роки.
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="../images/about-photo.jpg" alt="Фото фотографа" />
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h2>Мої роботи</h2>
+
+      <!-- Кнопка Фільтри як посилання -->
+      <div class="portfolio-filters desktop-only">
+        <span id="filter-button" class="filter-button">
+          <span class="filter-icon">☰</span>
+          Фільтри
+        </span>
+      </div>
+
+      <!-- Блок с тегами и кнопкой фильтров -->
+      <div class="portfolio-controls">
+        <div class="portfolio-tags">
+          <span class="tag">#ВесільнаЗйомка</span>
+          <span class="tag">#ПортретнаФотографія</span>
+          <span class="tag">#КорпоративнаЗйомка</span>
+          <span class="tag">#СімейнаФотосесія</span>
+          <span class="tag">#ФотоСесіяНаПрироді</span>
+          <span class="tag">#РепортажнаЗйомка</span>
+          <span class="tag">#ДитячаФотосесія</span>
+          <span class="tag">#ТворчаЗйомка</span>
+        </div>
+        <button class="filter-button-mobile" aria-label="Фільтри">
+          <span class="filter-icon">☰</span>
+        </button>
+      </div>
+
+      <!-- Галерея -->
+      <div id="portfolio-gallery" class="portfolio-gallery">
+        <div class="portfolio-item">
+          <img src="../images/photo1.jpg" alt="Робота 1" />
+          <p class="photo-tag">#ВесільнаЗйомка</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo2.webp" alt="Робота 2" />
+          <p class="photo-tag">#ПортретнаФотографія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo3.jpg" alt="Робота 3" />
+          <p class="photo-tag">#КорпоративнаЗйомка</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo4.jfif" alt="Робота 4" />
+          <p class="photo-tag">#СімейнаФотосесія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo4.jfif" alt="Робота 4" />
+          <p class="photo-tag">#СімейнаФотосесія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo4.jfif" alt="Робота 4" />
+          <p class="photo-tag">#СімейнаФотосесія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo4.jfif" alt="Робота 4" />
+          <p class="photo-tag">#СімейнаФотосесія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo4.jfif" alt="Робота 4" />
+          <p class="photo-tag">#СімейнаФотосесія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo4.jfif" alt="Робота 4" />
+          <p class="photo-tag">#СімейнаФотосесія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo4.jfif" alt="Робота 4" />
+          <p class="photo-tag">#СімейнаФотосесія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+        <div class="portfolio-item">
+          <img src="../images/photo4.jfif" alt="Робота 4" />
+          <p class="photo-tag">#СімейнаФотосесія</p>
+          <img src="../images/share-icon.png" alt="Share" class="share-icon" />
+        </div>
+      </div>
+      <div id="loading-icon" class="loading-icon"></div>
+    </section>
+
+    <div id="modal-overlay" class="modal-overlay">
+      <div class="modal-window">
+        <button class="close-button">×</button>
+        <h2 class="modal-title">Фільтри</h2>
+        <div class="categories">
+          <h3 class="categories-title">Категорії</h3>
+          <div class="categories-options">
+            <label class="category-option">
+              <input type="checkbox" name="category" value="Люди" />
+              Люди
+            </label>
+            <label class="category-option">
+              <input type="checkbox" name="category" value="Події" />
+              Події
+            </label>
+            <label class="category-option">
+              <input type="checkbox" name="category" value="Творчість" />
+              Творчість
+            </label>
+            <label class="category-option">
+              <input type="checkbox" name="category" value="Місто" />
+              Місто
+            </label>
+            <label class="category-option">
+              <input type="checkbox" name="category" value="Природа" />
+              Природа
+            </label>
+            <label class="category-option">
+              <input type="checkbox" name="category" value="Персональне" />
+              Персональне
+            </label>
+          </div>
+        </div>
+        <div class="tag-input-container">
+          <div class="input-wrapper">
+            <span class="icon"></span>
+            <input
+              type="text"
+              class="tag-input"
+              placeholder="Введіть ключові слова..."
+            />
+          </div>
+        </div>
+
+        <div class="tags-container">
+          <h3 class="tags-title">Теги</h3>
+          <div class="active-tags">
+            <div class="tag active">
+              #ВесільнаЗйомка
+              <span class="circle"></span>
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag active">
+              #НічнаФотографія
+              <span class="circle"></span>
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag active">
+              #ВесільнаЗйомка
+              <span class="circle"></span>
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag active">
+              #ВесільнаЗйомка
+              <span class="circle"></span>
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag active">
+              #ВесільнаЗйомка
+              <span class="circle"></span>
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag active">
+              #ВесільнаЗйомка
+              <span class="circle"></span>
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag active">
+              #ВесільнаЗйомка
+              <span class="circle"></span>
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+          <div class="inactive-tags">
+            <div class="tag">
+              #МіськаФотографія
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag">
+              #СімейнаФотосесія
+              <div class="count">
+                <span>11</span>
+              </div>
+            </div>
+            <div class="tag">
+              #МіськаФотографія
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag">
+              #СімейнаФотосесія
+              <div class="count">
+                <span>11</span>
+              </div>
+            </div>
+            <div class="tag">
+              #МіськаФотографія
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag">
+              #СімейнаФотосесія
+              <div class="count">
+                <span>11</span>
+              </div>
+            </div>
+            <div class="tag">
+              #МіськаФотографія
+              <div class="count">
+                <span>4</span>
+              </div>
+            </div>
+            <div class="tag">
+              #СімейнаФотосесія
+              <div class="count">
+                <span>11</span>
+              </div>
+            </div>
+            <!-- Добавьте остальные теги здесь -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="contact-info">
+        <h3>Контактна інформація</h3>
+        <p>(+380) 99-000-00-00</p>
+        <p>o.tereshchenko@photography.ua</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"
+            ><img src="../images/prime_twitter.png" alt="Icon 1"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="../images/prime_telegram.png" alt="Icon 2"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="../images/prime_instagram.png" alt="Icon 3"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="../images/prime_linkedin.png" alt="Icon 4"
+          /></a>
+        </div>
+      </div>
+      <div class="site-icon">
+        <img src="../images/logo.png" alt="Site Logo" />
+      </div>
+    </footer>
+    <script src="../js/header-mobile.js"></script>
+    <script src="../js/filter.js"></script>
+    <script src="../js/tagControls.js"></script>
+  </body>
+</html>

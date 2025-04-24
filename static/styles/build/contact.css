@@ -1,0 +1,201 @@
+.about-us {
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.75rem;
+  gap: 3.75rem;
+}
+.about-us .about-container {
+  display: flex;
+  gap: 3.75rem;
+}
+.about-us .about-container .about-photo img {
+  width: 26.25rem;
+  height: auto;
+}
+.about-us .about-container .about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about-us .about-container .about-text .about-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 3.75rem;
+  margin: 0;
+  align-self: center;
+}
+.about-us .about-container .about-text p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.about-us .about-container .about-text p.contact-info {
+  font-size: 1.25rem;
+}
+.about-us .about-container .about-text p.contact-info .contact-label {
+  font-weight: 500;
+}
+
+.red-highlight {
+  color: red;
+}
+
+.contact-form-section {
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form-section .contact-form-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+.contact-form-section .contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-form-section .contact-form .form-row {
+  display: flex;
+  gap: 2.5rem;
+}
+.contact-form-section .contact-form .form-row .form-group {
+  flex: 1;
+}
+.contact-form-section .contact-form .form-row .form-group label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.contact-form-section .contact-form .form-row .form-group input {
+  width: 100%;
+  height: 2.25rem;
+  border: 1px solid #adadad;
+  border-radius: 0.25rem;
+  background-color: #f0f3fa;
+  padding: 0 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  color: #0d1821;
+}
+.contact-form-section .contact-form .form-row .form-group input::placeholder {
+  color: #adadad;
+}
+.contact-form-section .contact-form .form-row .form-group input:focus {
+  outline: none;
+  border-color: #508dce;
+}
+.contact-form-section .contact-form .form-group label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.contact-form-section .contact-form .form-group input,
+.contact-form-section .contact-form .form-group textarea {
+  width: 100%;
+  border: 1px solid #adadad;
+  border-radius: 0.25rem;
+  background-color: #f0f3fa;
+  padding: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  color: #0d1821;
+}
+.contact-form-section .contact-form .form-group input::placeholder,
+.contact-form-section .contact-form .form-group textarea::placeholder {
+  color: #adadad;
+}
+.contact-form-section .contact-form .form-group input:focus,
+.contact-form-section .contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: #508dce;
+}
+.contact-form-section .contact-form .form-group textarea {
+  min-height: 9rem;
+  resize: none;
+}
+.contact-form-section .contact-form .submit-button {
+  align-self: center;
+  width: 12.5rem;
+  height: 4.5rem;
+  background-color: #508dce;
+  border: 1px solid #508dce;
+  border-radius: 0.25rem;
+  color: #e1e7f5;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+.contact-form-section .contact-form .submit-button:hover {
+  background-color: rgb(51.40625, 115.4017857143, 183.59375);
+}
+.contact-form-section .contact-form .submit-button:active {
+  background-color: rgb(99.921875, 153.9776785714, 211.578125);
+}
+
+@media (max-width: 1024px) {
+  .about-us {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75rem;
+    gap: 3.75rem;
+  }
+  .about-us .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+  .about-us .about-container .about-photo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    aspect-ratio: 1;
+  }
+  .about-us .about-container .about-photo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-us .about-container .about-text .about-title {
+    font-size: 2.25rem;
+  }
+  .about-us .about-container .about-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .about-us .about-container .about-text p.contact-info .contact-label {
+    font-weight: 500;
+  }
+  .contact-form-section {
+    padding: 0 2rem;
+  }
+  .contact-form-section .contact-form-title {
+    font-size: 1.75rem;
+  }
+  .contact-form-section .contact-form .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form-section .contact-form .submit-button {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
