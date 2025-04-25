@@ -130,7 +130,7 @@ int main() {
     bind(listenSock, (sockaddr*)&addr, sizeof(addr));
     listen(listenSock, SOMAXCONN);
 
-    std::cout << "Minimal pool server listening on port " << PORT << "\n";
+    std::cout << "Server listening on port " << PORT << "\n";
     ThreadPool pool(THREAD_COUNT);
 
     while (true) {
